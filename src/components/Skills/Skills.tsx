@@ -3,7 +3,7 @@ import "./Skills.scss";
 const Skills = () => {
   return (
     <section id="skill-section">
-      <div className="container">
+      <div id="animate-container" className="container animate">
         <h1>Skills</h1>
         <div className="col">
           <h2 className="title">Language</h2>

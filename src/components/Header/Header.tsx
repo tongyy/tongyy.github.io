@@ -10,6 +10,11 @@ const Header = () => {
         e.preventDefault();
         const targetId = link.getAttribute("href")!.substring(1);
         const targetElement = document.getElementById(targetId)!;
+        const animateContainer = document.getElementById("animate-container");
+        animateContainer!.classList.remove("animate");
+        setTimeout(() => {
+          animateContainer!.classList.add("animate");
+        }, 500);
 
         window.scrollTo({
           top: targetElement.offsetTop,
