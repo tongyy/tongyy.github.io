@@ -1,0 +1,231 @@
+#skill-section {
+  min-height: 100vh;
+  * {
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    font-size: 2.7em;
+    font-weight: normal;
+    padding: 10px 0 16px 0;
+    margin: 0 0 30px;
+    text-align: center;
+    color: #2187e7;
+    text-shadow: 1px 1px 5px #000, 0 0 10px #2187e7, 0 0 20px #2187e7;
+    background: #000;
+    border-radius: 2px;
+    border: 1px solid #2187e7;
+    box-shadow: 0px 0px 50px -8px #2187e7;
+    &.framework {
+      border: 1px solid #9acd32;
+      box-shadow: 0px 0px 50px -8px #9acd32;
+      color: #9acd32;
+      text-shadow: 1px 1px 5px #000, 0 0 10px #9acd32, 0 0 20px #9acd32;
+    }
+    &.programas {
+      border: 1px solid #ff4500;
+      box-shadow: 0px 0px 50px -8px #ff4500;
+      color: #ff4500;
+      text-shadow: 1px 1px 5px #000, 0 0 10px #ff4500, 0 0 20px #ff4500;
+    }
+  }
+
+  .container {
+    width: 90%;
+    padding: 5%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .col {
+    width: 27%;
+    margin: 0 3%;
+    position: relative;
+    float: left;
+    font-size: 12px;
+    line-height: 2em;
+    padding: 5% 0;
+  }
+  .skill {
+    list-style: none;
+    padding-top: 30px;
+    & li {
+      margin-bottom: 70px;
+      background: #030303;
+      height: 6px;
+      border-radius: 3px;
+      border-left: 1px solid #111;
+      border-top: 1px solid #111;
+      border-right: 1px solid #333;
+      border-bottom: 1px solid #333;
+    }
+    & em {
+      position: relative;
+      font-style: normal;
+      font-size: 14px;
+      text-align: center;
+      color: #dedede;
+      top: -28px;
+    }
+  }
+  .bar {
+    height: 5px;
+    position: absolute;
+  }
+  .blueline {
+    @extend .bar;
+    background: #2187e7;
+    box-shadow: 0px 0px 10px 1px rgba(0, 198, 255, 0.6);
+  }
+  .greenline {
+    @extend .bar;
+    background: #9acd32;
+    box-shadow: 0px 0px 10px 1px rgba(173, 255, 47, 0.4);
+  }
+  .redline {
+    @extend .bar;
+    background: #ff4500;
+    box-shadow: 0px 0px 10px 1px rgba(255, 69, 0, 0.4);
+  }
+
+  .title {
+    opacity: 1;
+    animation: title 5s ease-out;
+  }
+
+  // Language
+
+  @mixin animation-properties($name, $width) {
+    width: $width;
+    animation: $name 2s ease-out;
+    @keyframes #{$name} {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: $width;
+      }
+    }
+  }
+
+  .java {
+    @include animation-properties(java, 100%);
+  }
+  .kotlin {
+    @include animation-properties(kotlin, 90%);
+  }
+  .typescript {
+    @include animation-properties(typescript, 100%);
+  }
+  .javascript {
+    @include animation-properties(javascript, 100%);
+  }
+  .css {
+    @include animation-properties(css, 90%);
+  }
+  .go {
+    @include animation-properties(go, 40%);
+  }
+  .dart {
+    @include animation-properties(dart, 30%);
+  }
+
+  // framework
+  .spring {
+    @include animation-properties(spring, 100%);
+  }
+  .hibernate {
+    @include animation-properties(hibernate, 90%);
+  }
+  .nextjs {
+    @include animation-properties(nextjs, 90%);
+  }
+  .react {
+    @include animation-properties(react, 100%);
+  }
+  .redux {
+    @include animation-properties(redux, 100%);
+  }
+  .rq {
+    @include animation-properties(rq, 100%);
+  }
+  .flutter {
+    @include animation-properties(flutter, 60%);
+  }
+  .rn {
+    @include animation-properties(rn, 70%);
+  }
+
+  // cloud/middleware
+  .aws {
+    @include animation-properties(aws, 100%);
+  }
+  .ibmcloud {
+    @include animation-properties(ibmcloud, 50%);
+  }
+  .was {
+    @include animation-properties(was, 100%);
+  }
+  .tomcat {
+    @include animation-properties(was, 100%);
+  }
+  .ibmmq {
+    @include animation-properties(ibmmq, 100%);
+  }
+  .tibco {
+    @include animation-properties(ibmmq, 70%);
+  }
+  .rabbitmq {
+    @include animation-properties(ibmmq, 90%);
+  }
+  .kafka {
+    @include animation-properties(ibmmq, 50%);
+  }
+  .redis {
+    @include animation-properties(ibmmq, 80%);
+  }
+
+  @keyframes title {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    h2 {
+      font-size: 2.2em;
+    }
+  }
+  @media (max-width: 980px) {
+    h2 {
+      font-size: 1.8em;
+    }
+  }
+  @media (max-width: 767px) {
+    h2 {
+      font-size: 1.4em;
+    }
+  }
+  @media (max-width: 580px) {
+    h2 {
+      font-size: 1.1em;
+      padding: 10px 0;
+    }
+  }
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 2.2em;
+      padding: 10px 0 15px 0;
+    }
+    .col {
+      width: 90%;
+    }
+  }
+}
