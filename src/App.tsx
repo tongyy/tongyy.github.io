@@ -1,9 +1,8 @@
-import { useRef, useState } from "react";
-import "./App.scss";
 import Header from "./components/Header";
 import Intro from "./components/Intro";
 import ScrollToTop from "./components/ScrollToTop";
 import Skills from "./components/Skills";
+import "./App.scss";
 
 function App() {
   return (

@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleArrowUp } from "@fortawesome/free-solid-svg-icons";
 import "./ScrollToTop.scss";
 
 const ScrollToTop = () => {
@@ -23,7 +25,7 @@ const ScrollToTop = () => {
               });
             }}
           >
-            ^
+            <FontAwesomeIcon icon={faCircleArrowUp} />
           </span>
         </div>
       )}
