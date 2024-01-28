@@ -2,7 +2,7 @@ import Header from "./components/Header";
 import Intro from "./components/Intro";
 import ScrollToTop from "./components/ScrollToTop";
 import Skills from "./components/Skills";
-import "./App.scss";
+import Projects from "./components/Projects";
 
 function App() {
   return (
@@ -10,11 +10,7 @@ function App() {
       <Header />
       <Intro />
       <Skills />
-      <section id="project-section">
-        <div>hello</div>
-        <div>hello</div>
-        <div>hello</div>
-      </section>
+      <Projects />
       <ScrollToTop />
     </>
   );

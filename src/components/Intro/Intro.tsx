@@ -12,36 +12,34 @@ const Intro = () => {
   return (
     <section id="intro-section">
       <div>
-        <div>
-          <h1>Tony Yang</h1>
-          <button
-            className="brand-button"
-            onClick={() => window.location.assign(githubUrl)}
-            onMouseEnter={() => setGithubHover(true)}
-            onMouseLeave={() => setGithubHover(false)}
-          >
-            <FontAwesomeIcon
-              icon={faGithubSquare}
-              className="github-icon"
-              beatFade={githubHover}
-            />
-          </button>
-          <button
-            className="brand-button"
-            onClick={() => window.location.assign(linkedinUrl)}
-            onMouseEnter={() => setLinkedinHover(true)}
-            onMouseLeave={() => setLinkedinHover(false)}
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="linkedin-icon"
-              beatFade={linkedinHover}
-            />
-          </button>
-        </div>
-
-        <h3>Staff Engineer, Full Stack Developer, Instructor</h3>
+        <h1>Tony Yang</h1>
+        <button
+          className="brand-button"
+          onClick={() => window.location.assign(githubUrl)}
+          onMouseEnter={() => setGithubHover(true)}
+          onMouseLeave={() => setGithubHover(false)}
+        >
+          <FontAwesomeIcon
+            icon={faGithubSquare}
+            className="github-icon"
+            beatFade={githubHover}
+          />
+        </button>
+        <button
+          className="brand-button"
+          onClick={() => window.location.assign(linkedinUrl)}
+          onMouseEnter={() => setLinkedinHover(true)}
+          onMouseLeave={() => setLinkedinHover(false)}
+        >
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="linkedin-icon"
+            beatFade={linkedinHover}
+          />
+        </button>
       </div>
+
+      <h3>Staff Engineer, Full Stack Developer, Instructor</h3>
     </section>
   );
 };
