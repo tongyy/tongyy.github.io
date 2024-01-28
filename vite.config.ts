@@ -3,6 +3,11 @@ import react from "@vitejs/plugin-react";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "react-pages",
+  base: "/react-pages",
   plugins: [react()],
+  resolve: {
+    alias: {
+      assets: "/src/assets",
+    },
+  },
 });
