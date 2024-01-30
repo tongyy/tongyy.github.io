@@ -15,15 +15,45 @@
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
       transition: 0.3s;
       width: 40%;
+      cursor: pointer;
       &:hover {
-        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.7);
       }
       .card-container {
-        padding: 2px 16px;
+        padding: 16px 16px;
+        .card-pic {
+          width: 200px;
+          border-radius: 25px;
+          &.github-icon {
+            padding: 8px;
+            width: 190px;
+          }
+        }
+      }
+      .overview {
+        width: 200px;
+        text-align: start;
+        margin: auto;
       }
     }
     .google-play-icon {
-      width: 100px;
+      width: 180px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  #project-section {
+    .container {
+      display: block;
+      .card {
+        max-width: 650px;
+        width: 90%;
+        margin: auto;
+        .card-container {
+          margin-bottom: 16px;
+        }
+      }
     }
   }
 }
