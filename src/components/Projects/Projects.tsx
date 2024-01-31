@@ -6,7 +6,7 @@ import "./Projects.scss";
 const Projects = () => {
   return (
     <section id="project-section">
-      <h1>Projects</h1>
+      <h1>Personal Projects</h1>
       <div className="container">
         <div
           className="card"
